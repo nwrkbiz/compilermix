@@ -13,6 +13,21 @@ Requirements for a CII:
 * Functions declarations without name mangeling (because name mangeling is compiler dependent)
 * Functions declarations only using basic standard datatypes (no C++ datatypes, because their byte size and alignment is compiler dependent)
 
+Run test:
+---------
+
+Tested and developed on Debian 10
+
+### First install compilers:
+```
+sudo apt install g++ clang
+```
+
+### Run script
+```
+./test_foo.sh
+```
+
 Bonus:
 ------
 If a CII exits, it is easily possible to create bindings to high level languages like JAVA, C#, etc.
