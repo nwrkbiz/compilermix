@@ -19,6 +19,4 @@
 CII_MANGLE const char* CII_CALLCONV CII_FOO_GetFoo(void * fooObj);
 CII_MANGLE void CII_CALLCONV CII_FOO_SetFoo(void * fooObj, const char* newFoo);
 
-void CII_FOO_ShutDown(); // call this in foo dtor to clear allocated memory
-
 #endif //FOO_CII_H
