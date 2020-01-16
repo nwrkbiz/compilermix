@@ -1,10 +1,13 @@
 Proof of Concept Compiler Independent Interface (CII)
 =====================================================
-foo -> Class compiled with our "main compiler"
-main.cpp -> Program Entry Point using our "main compiler"
-foo_cii -> Compiler Independent Interface for class foo. Compiled with our "main compiler"
 
-foo_manip -> Shared Library compiled with "foreign compiler" and thus also needs compiler idependent functions (can be seen as entry point/wrapper to libraries developed with foreign compilers). Uses foo_cii to handle Objects of class foo compiled with "main compiler".
+This shows how it is somehow possible to mix compilers.
+
+* foo -> Class compiled with our "main compiler"
+* main.cpp -> Program Entry Point using our "main compiler"
+* foo_cii -> Compiler Independent Interface for class foo. Compiled with our "main compiler"
+
+* foo_manip -> Shared Library compiled with "foreign compiler" and thus also needs compiler idependent functions (can be seen as entry point/wrapper to libraries developed with foreign compilers). Uses foo_cii to handle Objects of class foo compiled with "main compiler".
 
 Use test_foo.sh in the root directory to rebuild project and run the test executable. G++ and CLANG need to be installed on the system.
 
